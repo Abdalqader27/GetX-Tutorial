@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_tutorial/getx-controller/my-controller.dart';
 
 import 'my-builder-controller.dart';
 
 // ignore: must_be_immutable
 class BuilderScreen extends StatelessWidget {
+  MyBuilderController myBuilderController = Get.put(MyBuilderController());
+
   @override
   Widget build(BuildContext context) {
     print("rebuild");
@@ -17,10 +18,25 @@ class BuilderScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             GetBuilder<MyBuilderController>(
-              init: MyBuilderController(),
+              init: myBuilderController,
+              id: "first",
+              dispose: (_) => myBuilderController.myDispose(),
               builder: (data) => Column(
                 children: [
                   Text(data.student.name.toString()),
+
+                  ///   you can replace this
+                  //   RaisedButton(child: Text("upper"), onPressed: () => data.toUpperCase())
+                ],
+              ),
+            ),
+            GetBuilder<MyBuilderController>(
+              init: myBuilderController,
+              dispose: (_) => myBuilderController.myDispose(),
+              builder: (data) => Column(
+                children: [
+                  Text(data.student.name.toString()),
+
                   ///   you can replace this
                   //   RaisedButton(child: Text("upper"), onPressed: () => data.toUpperCase())
                 ],
