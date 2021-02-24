@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_tutorial/getx-controller/name-second-screen.dart';
 import 'package:getx_tutorial/navigation/navigation-first-screen.dart';
 
 import 'getx-controller/name-screen.dart';
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
      // home: NavigationFirstScreen(),
 //      home: CounterScreen(),
-      home: NameScreen(),
+ //     home: NameScreen(),
+      home: NameSecondScreen(),
     );
   }
 }
