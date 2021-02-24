@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_tutorial/Simple%20State%20Manager-%20GetBuilder/builder-screen.dart';
 
+import 'Dependecy Injection/my-injection-app.dart';
 import 'Implementing Internationalization/messages.dart';
 import 'Implementing Internationalization/translation-screen.dart';
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       //    home: CounterScreen(),
       //     home: NameScreen(),
       //   home: NameSecondScreen(),
-      home: TranslationScreen(),
+    //  home: TranslationScreen(),
+      home: MyInjectionApp(),
     );
   }
 }
