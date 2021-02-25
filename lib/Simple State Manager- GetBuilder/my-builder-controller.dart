@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:getx_tutorial/models/student.dart';
+import 'package:getx_tutorial/Models/student.dart';
 
 class MyBuilderController extends GetxController {
   Student student = Student();

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_tutorial/getx-controller/my-controller.dart';
+
+import 'my-controller.dart';
 
 // ignore: must_be_immutable
 class NameSecondScreen extends StatelessWidget {

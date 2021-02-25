@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_tutorial/getx-controller/my-controller.dart';
+import 'package:getx_tutorial/Getx-Controllers%20Examples/my-controller.dart';
 
 // ignore: must_be_immutable
 class NameScreen extends StatelessWidget {
