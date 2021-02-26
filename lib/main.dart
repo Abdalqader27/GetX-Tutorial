@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
+import 'Get View and Get Widget/my-app-getview.dart';
 import 'Implementing Internationalization/messages.dart';
-import 'Storage-Email Validation/My-GetStorage-App.dart';
 
 void main() async {
   await GetStorage.init();
@@ -25,7 +25,8 @@ class MyApp extends StatelessWidget {
       //  home: TranslationScreen(),
       //   home: MyInjectionApp(),
       //  home: ProductListViewScreen(),
-      home: MyGetStorageApp(),
+      //    home: MyGetStorageApp(),
+      home: MyAppGetView(),
     );
   }
 }
