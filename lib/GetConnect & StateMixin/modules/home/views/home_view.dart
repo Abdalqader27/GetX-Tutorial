@@ -8,10 +8,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('User List'),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: Text('User List'), centerTitle: true),
       body: controller.obx(
         (data) => ListView.builder(
             padding: EdgeInsets.all(8),
