@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_tutorial/Fetch-Api-Example/Views/Product-List-view.dart';
+import 'package:get_storage/get_storage.dart';
 
 import 'Implementing Internationalization/messages.dart';
+import 'Storage-Email Validation/My-GetStorage-App.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  await GetStorage.init();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -20,7 +24,8 @@ class MyApp extends StatelessWidget {
       //   home: NameSecondScreen(),
       //  home: TranslationScreen(),
       //   home: MyInjectionApp(),
-      home: ProductListViewScreen(),
+      //  home: ProductListViewScreen(),
+      home: MyGetStorageApp(),
     );
   }
 }
